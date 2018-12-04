@@ -3,4 +3,4 @@
     define("USERNAME","root");
     define("PASSWORD","");
     define("DATABASE","cms");
-?>
+?> /*connecting to the database */
