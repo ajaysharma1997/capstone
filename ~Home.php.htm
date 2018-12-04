@@ -1,0 +1,150 @@
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: session_start(): Cannot send session cookie - headers already sent in C:\wamp\www\hpl\Home.php on line <i>2</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0051</td><td bgcolor='#eeeeec' align='right'>129752</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\hpl\Home.php' bgcolor='#eeeeec'>..\Home.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0052</td><td bgcolor='#eeeeec' align='right'>130064</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.session-start' target='_new'>session_start</a>
+(  )</td><td title='C:\wamp\www\hpl\Home.php' bgcolor='#eeeeec'>..\Home.php<b>:</b>2</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: session_start(): Cannot send session cache limiter - headers already sent in C:\wamp\www\hpl\Home.php on line <i>2</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0051</td><td bgcolor='#eeeeec' align='right'>129752</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\hpl\Home.php' bgcolor='#eeeeec'>..\Home.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0052</td><td bgcolor='#eeeeec' align='right'>130064</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.session-start' target='_new'>session_start</a>
+(  )</td><td title='C:\wamp\www\hpl\Home.php' bgcolor='#eeeeec'>..\Home.php<b>:</b>2</td></tr>
+</table></font>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale="1"/>
+	<link rel="stylesheet" href="bootstrap/js/bootstrap.min.css"/>
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    arr=new Array("images/h1.png","images/slider-image2.jpg");
+    i=0;
+    function ChangeImage()
+    {
+        if(i<2)
+        {
+            document.images[0].src=arr[i];
+            i++;
+        }
+        else
+        {
+            i=0;
+        }
+    }
+    function Start()
+    {
+        setInterval("ChangeImage()",1000);
+    }
+    </script>
+   
+
+	<title>HOSPITAL MANAGEMENT</title>
+</head>
+
+<body onload="Start()"  background="images/back.jpg" >
+<div class="container">
+
+<div class="row" >
+    <div class="col-md-12">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hospital</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.php">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SPECIALITIES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="bone.php">Bone Marrow Transplant</a></li>
+          <li><a href="ent.php">ENT(Ear,Nose And Throat)</a></li>
+          <li><a href="surgery.php">Cosmetic And Plastic Surgery</a></li>
+          <li><a href="medicine.php">Internal Medicine</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PATIENTS & VISITORS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="doctors.php">Available Doctors</a></li>
+          <li><a href="appointment.php">Book an Appointment</a></li>
+          <li><a href="onlinepayment.php">Online Payment</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
+          <li><a href="Facilities.php">Facilities</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SHOW RECORDS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="showappointment.php">Show Appointment</a></li>
+          <li><a href="showquery.php">Show Queries</a></li>
+        </ul>
+      </li>
+      
+        <li><a href='login.php'>LOGIN</a></li>     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> STORE <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="blood.php">BLOOD BANK</a></li>
+          <li><a href="med.php">MEDICINES</a></li>
+        </ul>
+      </li>
+      <li><a href="aboutus.php">ABOUT US</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+</div><div class="row">
+    <div class="col-md-8" style="height: 500px;">
+   
+    <img src="images/h1.png" width="80%" height="50%" alt=""/><br />
+    <h1><marquee>HOSPITAL</marquee></h1>
+    
+    
+    </div>
+    <div class="col-md-4">
+   
+    <form>
+<h4><b>Send Us Your Queries</b></h4>
+<hr /> 
+<input type="text"  name="txt_name" placeholder="Full Name" width="100%"/><br /><br />
+<input type="text"  name="txt_email" placeholder="Email ID" width="100%"/><br /><br />
+<input type="text"  name="txt_mobile" placeholder="Mobile" width="100%"/><br /><br />
+<input type="text"  name="txt_country" placeholder="Country" width="100%"/><br /><br />
+<textarea name="txt_message" placeholder="Message"></textarea><br /><br />
+<input type="submit" name="Submit" value="Submit" />
+</form>
+    
+    </div>
+</div>
+
+    <div class="row" >
+        <div class="col-md-8 bg-info">
+        <h6><img src="images/ambulance.png" class="img-responsive" height="50px" width="50px"/><a href="#">Emergency Call-108</a></h6>
+        </div>
+        <div class="col-md-4 bg-info">
+            <h3>@CopyRight 2017 JAL Hospital All Rights Reserved</h3>
+        </div>
+    </div>
+   
+    
+
+
+
+    
+
+
+</div>
+</body>
+</html>PHP Warning:  session_start(): Cannot send session cookie - headers already sent in C:\wamp\www\hpl\Home.php on line 2
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\hpl\Home.php:0
+PHP   2. session_start() C:\wamp\www\hpl\Home.php:2
+PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent in C:\wamp\www\hpl\Home.php on line 2
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\hpl\Home.php:0
+PHP   2. session_start() C:\wamp\www\hpl\Home.php:2
